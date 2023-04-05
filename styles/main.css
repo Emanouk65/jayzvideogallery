@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    background: conic-gradient(at top right, slategray, white);
+    color: rgb(165, 48, 48);
+    justify-content: space-evenly;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+    margin-bottom: 3vh;
+    width: 100%;
+    
+  }
+
+  footer {
+    width: 100%;
+  }
+  
+  header h2 {
+    font-size: 250%;
+  }
+  
+  nav {
+    flex: 0 0 300px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    position: sticky;
+    top: 100px;
+  }
+  
+  main {
+    flex: 0 1 600px;
+    padding: 3vh;
+  }
+  
+  header img {
+    max-width: 800px;
+    margin: 2vh;
+  }
+  
+  nav a {
+    font-weight: bold;
+    font-size: 120%;
+    text-decoration: none;
+    display: block;
+    padding: 2vh;
+    background-color: #808080;
+    font-size: 120%;
+    border-radius: 5px;
+    margin: 1vh;
+  }
+  
+  nav a:link,
+  nav a:visited {
+    color: whitesmoke;
+  }
+  
+  nav a:hover {
+    cursor: pointer;
+    color: red;
+  }
+  
+  .videowrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    margin: 2vh 0;
+  }
+  
+  .videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 6px ridge #808080;
+    box-shadow: 5px 5px 15px 10px #660000;
+  }
+
+  /* Style for the "Return to Top" button */
+#cornerBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    background-color: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+  }
+  
+  #cornerBtn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Style for the "Up" arrow icon */
+  #cornerBtn i {
+    margin-top: 2px;
+  }
+  
+  /* Show the button when the user scrolls down 20px from the top of the document */
+  @media (min-width: 768px) {
+    #cornerBtn {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    #cornerBtn {
+      display: block;
+    }
+  }
+  
+  /* Show the button when the user scrolls down 20px from the top of the document */
+  @media (max-width: 767px) {
+    #cornerBtn {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #cornerBtn {
+      bottom: 10px;
+      right: 10px;
+    }
+  }
+  
+  
